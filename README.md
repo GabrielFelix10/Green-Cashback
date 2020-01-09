@@ -1,8 +1,8 @@
-## <p> Green CashBack</p>
+# <p> Green CashBack</p>
 
 This project have a responsibility to serve like as api-gateway, to possible many cashback data fonts
 
-**## Starting local application in your machine**
+### Starting local application in your machine
 
 1 -   ./gradlew bootRun
 <br />
@@ -14,7 +14,7 @@ And be happy :)
 **## Or Run the docker image **
 <br />
 
-# This project have dependencie with 
+**## This project have dependencie with **
 * [Green Cashback Calculator](https://github.com/GabrielFelix10/Green-Cashback-Calculator)
 
 **## This project was build using some technologies, listed below**
