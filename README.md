@@ -10,7 +10,8 @@ This project have a responsibility to serve like as api-gateway, to possible man
 
 And be happy :)
 <br />
-**## Or Up the project docker image**
+
+**## Or Run the docker image**
 
 
 
