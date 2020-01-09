@@ -14,7 +14,7 @@ And be happy :)
 **## Or Run the docker image **
 <br />
 
-### This project was build using some technologies, listed below
+**## This project was build using some technologies, listed below**
 
 * Java 11
 * Kubernetes 
