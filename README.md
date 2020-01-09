@@ -11,10 +11,10 @@ This project have a responsibility to serve like as api-gateway, to possible man
 And be happy :)
 <br />
 
-**## Or Run the docker image **
+**## Or Run the docker image**
 <br />
 
-**## This project have dependencie with **
+**## This project have dependencie with**
 * [Green Cashback Calculator](https://github.com/GabrielFelix10/Green-Cashback-Calculator)
 
 **## This project was build using some technologies, listed below**
