@@ -12,6 +12,17 @@ And be happy :)
 <br />
 
 **## Or Run the docker image**
+<br />
+
+**## This project was build using some technologies, listed below**
+
+* Java 11
+* Kubernetes 
+* Docker
+* Hystrix for circuit breaker
+* feign for http calls and retries
+* Cucumber for tests
+* Spring test for TDD
 
 
 
