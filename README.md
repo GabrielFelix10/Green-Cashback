@@ -14,6 +14,9 @@ And be happy :)
 **## Or Run the docker image **
 <br />
 
+# This project have dependencie with 
+* [Green Cashback Calculator](https://github.com/GabrielFelix10/Green-Cashback-Calculator)
+
 **## This project was build using some technologies, listed below**
 
 * Java 11
