@@ -8,7 +8,7 @@ This project have a responsibility to serve like as api-gateway, to possible man
 ./gradlew bootRun
 <br />
 ### Step 2
-2 - localhost:9095/swagger-ui.html
+2 - localhost:9094/swagger-ui.html
 
 And be happy :)
 <br />
