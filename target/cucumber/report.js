@@ -26,3 +26,20 @@ formatter.step({
 formatter.match({
   "location": "CashBackStepDefs.make_request_to_cashback_machine()"
 });
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "i must return this informations",
+  "keyword": "Then ",
+  "doc_string": {
+    "value": "{\n  \"cashBackValue\": 0.64\n}"
+  }
+});
+formatter.match({
+  "location": "CashBackStepDefs.i_must_return_this_informations(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+});

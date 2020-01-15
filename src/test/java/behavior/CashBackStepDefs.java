@@ -25,6 +25,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 
 import java.math.BigDecimal;
@@ -35,7 +36,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @TestPropertySource(locations = {"classpath:application.properties"})
 @WebAppConfiguration
-@ContextConfiguration(classes = GreenCashBackApplication.class)
+@ContextConfiguration(classes = {GreenCashBackApplication.class})
 public class CashBackStepDefs {
 
     private int bottles;
@@ -66,13 +67,14 @@ public class CashBackStepDefs {
         WireMock.reset();
     }
 
-    @Given("I receive a request to obtain a cashback with {int} bottles")
-    public void i_receive_a_request_to_obtain_a_cashback_with_bottles(final Integer int1) throws JsonProcessingException {
 
+    @Given("I receive a request to obtain a cashback with {int} bottles")
+    public void i_receive_a_request_to_obtain_a_cashback_with_bottles(final Integer bottles) throws JsonProcessingException {
+        this.bottles = bottles;
 
         MockHttpCall.callCalculatorCashBack(wireMockServer,mockCashBack() , mockBottle());
 
-        this.bottles = bottles;
+
     }
 
 

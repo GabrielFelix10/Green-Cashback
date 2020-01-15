@@ -21,7 +21,7 @@ public class CashbackResource {
     private CashbackService service;
 
     @ApiOperation(value = "Obtain cashback value", response = CashBackDTO.class)
-    @GetMapping("/cash-back")
+    @GetMapping("/cash-back/{bottles}")
     public ResponseEntity<CashBackDTO> obtainCashback(@PathVariable("bottles") final int bottlesQuantity) throws IOException, InterruptedException {
 
         return service.obtainCashback(bottlesQuantity)
