@@ -18,15 +18,3 @@ resilience4j.circuitbreaker:
       minimumNumberOfCalls: 3
       waitDurationInOpenState: 50s
       failureRateThreshold: 10
-
-## https://resilience4j.readme.io/docs/retry
-resilience4j.retry:
-  instances:
-    cacheBackCalculate:
-      maxRetryAttempts: 3
-      waitDuration: 3s
-      retryExceptions:
-          - org.springframework.web.client.HttpServerErrorException
-          - java.io.IOException
-        ignoreExceptions:
-          - io.github.robwin.exception.BusinessException
