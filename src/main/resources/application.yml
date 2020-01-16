@@ -1,0 +1,32 @@
+spring:
+  application.name: green-cashback
+
+server:
+  port: 9094
+
+greenCashbackCalculator:
+  url: http://localhost:9095
+
+## https://resilience4j.readme.io/docs/circuitbreaker
+resilience4j.circuitbreaker:
+  instances:
+    cacheBackCalculate:
+      registerHealthIndicator: true
+      slidingWindowSize: 4
+      permittedNumberOfCallsInHalfOpenState: 3
+      slidingWindowType: TIME_BASED
+      minimumNumberOfCalls: 3
+      waitDurationInOpenState: 50s
+      failureRateThreshold: 10
+
+## https://resilience4j.readme.io/docs/retry
+resilience4j.retry:
+  instances:
+    cacheBackCalculate:
+      maxRetryAttempts: 3
+      waitDuration: 3s
+      retryExceptions:
+          - org.springframework.web.client.HttpServerErrorException
+          - java.io.IOException
+        ignoreExceptions:
+          - io.github.robwin.exception.BusinessException

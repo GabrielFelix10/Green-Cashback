@@ -4,8 +4,10 @@ This project have a responsibility to serve like as api-gateway, to possible man
 
 ## Starting local application in your machine
 
-### Step 1   
+### Step 1  
+```sh 
 ./gradlew bootRun
+```
 <br />
 ### Step 2
 2 - localhost:9094/swagger-ui.html

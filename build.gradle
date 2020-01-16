@@ -34,6 +34,9 @@ dependencies {
 	compile(group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2')
 	compile(group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2')
 
+	compile(group: 'io.github.resilience4j', name: 'resilience4j-spring-boot2', version: '1.2.0')
+
+	compile('org.springframework.boot:spring-boot-starter-aop')
 
 }
 
