@@ -26,7 +26,7 @@ And be happy :)
 * Java 11
 * Kubernetes 
 * Docker
-* resilience4J for circuit breaker and retry
+* resilience4J for circuit breaker
 * Cucumber for Behavior test
 * Spring test for unity Test
 
